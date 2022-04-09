@@ -1,9 +1,9 @@
-from flask import Flask
+import urllib.request
+from bs4 import BeautifulSoup
 
-app = Flask(__name__)
+class Scraper:
+    def __init__(self,site):
+        self.site = site
 
-@app.route('/')
-def index():
-  return "privet"
-
-app.run(port='8000')
+    def scrape(self):
+        pass
